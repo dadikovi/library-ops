@@ -10,6 +10,20 @@
      ```
      docker-compose -f docker/app.yml up -d
      ```
+3. If this is first time:
+    
+    Create rabbitmq user:
+    
+    ```shell script
+    docker exec -it {rabbit_container} bash
+    root@b309b0a8a6c6:/# rabbitmqctl add_user admin admin
+    Adding user "admin" ...
+    root@b309b0a8a6c6:/# rabbitmqctl set_user_tags admin administrator
+    Setting tags for user "admin" to [administrator] ...
+    root@b309b0a8a6c6:/# rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+    Setting permissions for user "admin" in vhost "/" ...
+    ```
+
 3. Access of the application
     
     There is no UI for the application, it can be used through the Swagger / Open API UI.

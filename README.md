@@ -9,8 +9,8 @@ Currently it uses two microservices:
 
 ## Documentations
 
-- how to build and start the app: [usage](docs/usage.md)
-- interface descriptions: they are available in Swagger UI, for more information check [usage](docs/usage.md).
+- [usage](docs/usage.md)
+- [interface descriptions](docs/interface.md)
 - [architecture](docs/architecture.md)
 
 ## Other
